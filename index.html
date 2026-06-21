@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Fathers Day!</title>
+
+    <link rel = "stylesheet" href = "style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button class = "PlaceHolder"> Click Me! </button>
+
+    <script>
+        const PlaceHolderButton = document.querySelector(".PlaceHolder");
+
+        PlaceHolderButton.addEventListener("click", () => {
+            PlaceHolderButton.classList.add("is-clicked")
+            PlaceHolderButton.textContent = "Happy Fathers Day! \n From Kai"
+        })
+    </script>
+</body>
+
+</html>

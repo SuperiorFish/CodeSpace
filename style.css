@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #8686db;
+
+    overflow: hidden;
+}
+
+@keyframes OnClick {
+    0% {
+        border-radius: 100%;
+
+        width: 500px;
+        height: 500px;
+    }
+
+    100% {
+        border-radius: 0%;
+
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.PlaceHolder {
+    position: absolute;
+
+    display: block;
+
+    width: 500px;
+    height: 500px;
+
+    border: none;
+    
+    border-radius: 100%;
+
+    font-family: "Montserrat";
+    font-size: xx-large;
+    color: aliceblue;
+
+    background-image: radial-gradient(#8282b1, #1414bd);
+
+}
+
+.PlaceHolder.is-clicked { 
+    animation: OnClick .5s ease-in forwards; 
+}
